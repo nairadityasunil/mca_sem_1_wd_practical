@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Mixed Borders and Image Border</title>
+    <style>
+        .mixed-border-box {
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            border-top: 8px dotted orange;
+            border-right: 8px  double brown;
+            border-bottom: 8px dashed green;
+            border-left: 8px solid pink;
+            padding: 25px;
+            box-sizing: border-box;
+            text-indent: 50px;
+        }
+
+        .mixed-border-box h2 {
+            text-transform: uppercase;
+        }
+
+        .mixed-border-box span {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mixed-border-box">
+        <h2>Mixed Border </h2>
+        <p><span>This box has mixed borders with different styles and colors.</span></p>
+    </div>
+</body>
+</html>

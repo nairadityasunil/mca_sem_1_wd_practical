@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Different Border Radius Property's</title>
+    <style>
+      .test {
+        display: flex;
+      }
+      button {
+        margin: 32px 10px;
+        width: 30px;
+        height: 30px;
+        border-style: none;
+        background-color: #9eb6c1;
+      }
+      span {
+        border-collapse: collapse;
+        height: 90px;
+        width: 50px;
+      }
+      .main:nth-child(odd) {
+        background-color: #a595a3;
+      }
+      .main:nth-child(even) {
+        background-color: #d3d3d3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="test">
+      <span class="main"
+        ><button style="border-radius: 50px 20px 10px 5px"></button
+      ></span>
+      <span class="main"
+        ><button style="border-radius: 30px 15px 5px 15px"></button
+      ></span>
+      <span class="main"
+        ><button style="border-radius: 25px 5px"></button
+      ></span>
+      <span class="main"><button style="border-radius: 50px"></button></span>
+      <span class="main"
+        ><button style="border-radius: 50px/15px"></button
+      ></span>
+      <span class="main"><button style="border-radius: 50px"></button></span>
+      <span class="main"
+        ><button style="border-radius: 10px 1px"></button
+      ></span>
+      <span class="main"><button style="border-radius: 50px"></button></span>
+    </div>
+  </body>
+</html>

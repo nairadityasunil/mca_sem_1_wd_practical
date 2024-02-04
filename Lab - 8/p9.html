@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Column Layout Example</title>
+  <style>
+    .multi-column-container {
+      column-count: 3; 
+      column-width: 200px; 
+      column-gap: 20px; 
+    }
+
+    .multi-column-item {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: bisque;
+    }
+
+    .span-col {
+      column-span: all;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="multi-column-container">
+    <div class="multi-column-item span-col">
+      <h2>Heading 1 (Spanning all columns)</h2>
+      <p>This is the content of the first item, which spans all columns.</p>
+    </div>
+    <div class="multi-column-item">
+      <h2>Heading 2</h2>
+      <p>This is the content of the second item.</p>
+    </div>
+    <div class="multi-column-item">
+      <h2>Heading 3</h2>
+      <p>This is the content of the third item.</p>
+    </div>
+    <!-- Add more items as needed -->
+  </div>
+
+</body>
+</html>

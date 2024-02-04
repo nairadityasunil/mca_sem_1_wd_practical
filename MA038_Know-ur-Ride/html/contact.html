@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know-ur-Ride</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/brand_page.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/contact-form.css">
+    <link rel="stylesheet" href="../css/effects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/validation.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <a href="../index.html" style="border: none;">
+            <label for="" class="logo">Know-ur-Ride</label>
+        </a>
+        <ul class="navbar-links">
+            <li>
+                <a href="../index.html#home" class="home_links1" onclick="toggle_active_class1()">Home</a>
+            </li>
+            <li>
+                <a href="../index.html#brands" class="home_links2" onclick="toggle_active_class2()">Brands</a>
+            </li>
+            <li>
+                <a href="../index.html#types" class="home_links3" onclick="toggle_active_class3()">Type</a>
+            </li>
+            <li>
+                <a href="../html/contact.html" class="home_links3" onclick="toggle_active_class4()">Contact</a>
+            </li>
+            <li>
+                <input type="search" name="" id="" placeholder="Search">
+            </li>
+            <li>
+                <a href="" class="nav-search">Go</a>
+            </li>
+        </ul>
+        <label for="" id="icon">
+            <button onclick="toggle_navbar()" class="menu_button">
+                <i class="fa fa-bars"></i>
+            </button>
+        </label>
+    </nav>
+    <center>
+        <div class="contact-form">
+            <div class="form1">
+                <h1>Let Us Solve Your Queries</h1>
+                <form action="" name="form2" onsubmit="validate(event)">
+                    <table style="width: 80%; color: white; text-align: center; line-height: 50px; font-size: 20px;">
+                        <tr>
+                            <td style="width: 30%; text-align: end;">Enter Name : </td>
+                            <td>
+                                <input type="text" id="" style="width: 70%;" name="cname" onkeydown="hide_nerror()">
+                                <div id="nerror"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;  text-align: end;">Enter Email : </td>
+                            <td>
+                                <input type="email" id="" style="width: 70%;" name="cemail" onkeydown="hide_eerror()">
+                                <div id="eerror"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;  text-align: end;">Enter Contact : </td>
+                            <td>
+                                <input type="tel" id="" style="width: 70%;" name="cphone" onkeydown="hide_perror()">
+                                <div id="perror"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 30%;  text-align: end;">Your Query : </td>
+                            <td>
+                                <textarea id="" cols="40" rows="5" style="border-radius: 10px;" name="cquery"
+                                    onkeydown="hide_qerror()"></textarea>
+                                    <div id="qerror"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Submit" class="submit_btn">
+                                <!-- <button class="submit_btn">
+                                    Submit
+                                </button> -->
+                                <button class="reset_btn" type="reset">
+                                    Reset
+                                </button>
+                                <!-- <input type="reset" value="Reset" class="reset_btn"> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div id="error">
+                                    <!-- <span>Hi</span> -->
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+        </div>
+
+    </center>
+
+    <!-- Footer section -->
+    <div class="footer" id="contact">
+        <hr>
+        <div class="copyright">
+            Made By Aditya Nair
+        </div>
+        <div class="social-media">
+            <span>Connect With Me On</span>
+            <!-- <span class="connect">Connect With Me On</span> -->
+            <a href="https://linkedin.com/in/aditya-nair-939b29220" style="border: none;" target="_blank">
+                <img src="../images/social media/linkedin-logo-png-1854.png" alt="" srcset="">
+            </a>
+            <a href="https://instagram.com/nairadityasunil" style="border: none;" target="_blank">
+                <img src="../images/social media/logo-ig-png-32464.png" alt="" srcset="">
+            </a>
+            <a href="https://github.com/nairadityasunil" style="border: none;" target="_blank">
+                <img src="../images/social media/github.png" alt="" srcset="">
+            </a>
+            <!-- <a href="https://www.snapchat.com/add/nairadityasunil?share_id=U4lTz50YhIA&locale=en-US" style="border: none;" target="_blank">
+                <img src="/images/social media/snapchat-logo-png-1450 (1).png" alt="" srcset="">
+            </a> -->
+        </div>
+    </div>
+</body>
+
+</html>

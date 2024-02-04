@@ -1,0 +1,591 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(24, 24, 24);
+    border-radius: 8px; /* Adjust the radius to make it round */
+    width: 8px; /* Adjust the width to make it smaller */
+    height: 8px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: black;
+    overflow-x: hidden;
+
+}
+
+/* Navbar Styling */
+nav {
+    height: 55px;
+    width: 100%;
+    /* background: #212121;  */
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #FFD700;
+}
+
+.logo {
+    margin: auto;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    padding: 0 20px;
+    line-height: 55px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 2px;
+    line-height: 55px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    border: 1px solid transparent;
+    padding: 4px 7px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+nav #icon {
+    line-height: 45px;
+    float: right;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.home-card img {
+    height: 120%;
+    width: 100vw;
+
+}
+
+.welcome_heading {
+    color: #04444D;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.card {
+    margin-top: 3vh;
+    width: 100vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding-bottom: 2vw;
+}
+
+.card p {
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    word-spacing: 0%;
+}
+
+
+.padding-class {
+    padding-top: 60px;
+}
+
+#home {
+    padding-top: 0.5%;
+    height: 47vw;
+}
+
+.home-card {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100vw;
+    height: 45vw;
+    top: 0;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 0;
+    animation: home-background 30s ease-in-out infinite;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.animated-text {
+    position: absolute;
+    color: RED;
+    margin-top: 5%;
+    width: 50%;
+    top: 25%;
+    left: 5%;
+    justify-content: center;
+    align-items: center;
+    animation: slidein 2s;
+}
+
+.know-more {
+    position: absolute;
+}
+
+.animated-text span {
+    position: absolute;
+    margin-top: 2%;
+    color: white;
+}
+
+.animated-text a {
+    margin-top: 5%;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+}
+
+.nav-search {
+    margin-top: 5%;
+    background: #7C0A02;
+    color: white;
+}
+
+.home-card h1 {
+    font-size: 3vw;
+    font-family: Helvetica, sans-serif;
+    border-bottom: 5px solid white;
+}
+
+.details-card-parent {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 22% !important;
+    height: 100px;
+}
+
+.card-parent {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #7C0A02;
+}
+
+#details {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.details-card {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.dcard {
+    padding: 2%;
+}
+
+.details-card h2 {
+    color: white;
+    border-bottom: 5px double orange;
+}
+
+
+.details-card p {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+}
+
+.dcard {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    right: 0;
+    left: 2%;
+    width: 90%;
+}
+
+.about-heading {
+    padding-top: 3%;
+    color: #7C0A02;
+    border-bottom: 2px solid white;
+    font-size: 3vw;
+    width: fit-content;
+}
+
+.mission {
+    background: #353839;
+    padding: 10px;
+    height: 250px;
+    text-align: center;
+}
+
+.innovation {
+    background: #353839;
+    padding: 10px;
+    height: 250px;
+    text-align: center;
+}
+
+.sustainability {
+    background: #353839;
+    padding: 10px;
+    height: 250px;
+    text-align: center;
+}
+
+#brands {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 0.5%;
+    padding-bottom: 50px;
+    margin-top: 2%;
+}
+
+.brand_heading {
+    padding-top: 3%;
+    color: #7C0A02;
+    text-align: center;
+    font-size: 3vw;
+    width: fit-content;
+    border-bottom: 2px solid white;
+}
+
+.brand-card {
+    justify-content: center;
+    align-items: center;
+}
+
+.bcard1 {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    font-size: xx-large;
+    gap: 3%;
+}
+
+.brand-name {
+    background-color: #7C0A02;
+    color: white;
+    border-color: 0;
+}
+
+.mercedes {
+    display: block;
+    width: 16vw;
+    height: auto;
+    text-align: center;
+}
+
+.mercedes img {
+    width: 70%;
+    height: auto;
+    padding: 5%;
+}
+
+.mercedes .brand-name {
+    max-height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 2px solid #7C0A02;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.bmw {
+    display: block;
+    width: 16vw;
+    height: auto;
+    text-align: center;
+}
+
+.bmw img {
+    width: 70%;
+    height: auto;
+    padding: 5%;
+}
+
+.bmw .brand-name {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    max-height: 100%;
+    border-top: 2px solid #7C0A02;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.audi {
+    display: block;
+    width: 16vw;
+    height: auto;
+    text-align: center;
+}
+
+.audi img {
+    width: 70%;
+    height: auto;
+    padding: 5%;
+}
+
+.audi .brand-name {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    max-height: 100%;
+    border-top: 2px solid #7C0A02;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+@keyframes slidein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.toyota {
+    display: block;
+    width: 16vw;
+    height: auto;
+    text-align: center;
+}
+
+.toyota img {
+    width: 70%;
+    height: auto;
+    padding: 5%;
+}
+
+.toyota .brand-name {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 2px solid #7C0A02;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#types {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 0.5%;
+    padding-bottom: 50px;
+    margin-top: 2%;
+}
+
+.type_heading {
+    padding-top: 1%;
+    color: #7C0A02;
+    text-align: center;
+    font-size: 3vw;
+    width: fit-content;
+    border-bottom: 2px solid white;
+}
+
+.type-card {
+    justify-content: center;
+    align-items: center;
+}
+
+.tcard1 {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    width: 100%w;
+    justify-content: center;
+    gap: 2%;
+}
+
+.type-name {
+    background-color: #7C0A02;
+    color: white;
+    border-color: 0;
+}
+
+.hatchback {
+    display: block;
+    width: 16vw;
+    height: auto;
+    text-align: center;
+    border: 2px solid #7C0A02;
+}
+
+.hatchback img {
+    width: 70%;
+    height: auto;
+    padding: 5%;
+}
+
+.hatchback .type-name {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 2px solid #7C0A02;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.convertible {
+    display: block;
+    width: 16vw;
+    height: auto;
+    text-align: center;
+    border: 2px solid #7C0A02;
+}
+
+.convertible img {
+    width: 70%;
+    height: auto;
+    padding: 5%;
+}
+
+.convertible .type-name {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 2px solid #7C0A02;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.mpv {
+    display: block;
+    width: 16vw;
+    height: auto;
+    text-align: center;
+    border: 2px solid #7C0A02;
+}
+
+.mpv img {
+    width: 70%;
+    height: auto;
+    padding: 5%;
+}
+
+.mpv .type-name {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 2px solid #7C0A02;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.sedan {
+    display: block;
+    width: 16vw;
+    height: auto;
+    text-align: center;
+    border: 2px solid #7C0A02;
+}
+
+.sedan img {
+    width: 70%;
+    height: auto;
+    padding: 5%;
+}
+
+.sedan .type-name {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 2px solid #7C0A02;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.suv {
+    display: block;
+    width: 16vw;
+    height: auto;
+    text-align: center;
+    border: 2px solid #7C0A02;
+}
+
+.suv img {
+    width: 70%;
+    height: auto;
+    padding: 5%;
+}
+
+.suv .type-name {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-top: 2px solid #7C0A02;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.footer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #4a0602;
+}
+
+.footer hr{
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media img {
+    width: 30px;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.connect {
+    color: white;
+}
+
+.social-media span{
+    color: white;
+}

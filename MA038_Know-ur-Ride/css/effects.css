@@ -1,0 +1,48 @@
+.logo:hover{
+    cursor: pointer;
+}
+
+a.active,a:hover{
+    transition: 0.5s;
+    color: orange;
+    border-bottom: 2px solid white;
+}
+.nav-search:hover{
+    border: 1px solid #4a0602;
+    color: white;
+    background: #4a0602;
+    transition: transform 0.2s ease-in-out;
+}
+.animated-text a:hover{
+    border: 1px solid #7C0A02;
+    color: white;
+    background: #7C0A02;
+    transition: transform 0.2s ease-in-out;
+}
+.details::before{
+    text-align: center;
+    content: ""; /* Initialially the content displayed will be null */
+    padding: 1vw;
+    position: absolute;
+    color: orange;
+    display: block;
+    flex-direction: row; /* Flex direction will be set to one row */
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    left: 0;
+    width: 100%;
+    margin-top: 11vw;
+    animation: text-background 30s linear infinite; /* Animations to set details about the website */
+}
+.card-parent:hover{
+    border-color: #4a0602;
+    background-color: #20212285;
+}
+.card-parent:hover{
+    transform: scale(1.1);
+}
+.card-parent:hover .brand-img{
+    overflow: hidden;
+}
